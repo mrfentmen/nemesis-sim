@@ -1,0 +1,160 @@
+{"target": "Chun-Li", "seed": 101, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 102, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 103, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 104, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 105, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 106, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 107, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 108, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 109, "split": "eval_pursuit"}
+{"target": "Chun-Li", "seed": 110, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 101, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 102, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 103, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 104, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 105, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 106, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 107, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 108, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 109, "split": "eval_pursuit"}
+{"target": "Cloud Strife", "seed": 110, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 101, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 102, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 103, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 104, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 105, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 106, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 107, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 108, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 109, "split": "eval_pursuit"}
+{"target": "Doc Brown", "seed": 110, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 101, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 102, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 103, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 104, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 105, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 106, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 107, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 108, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 109, "split": "eval_pursuit"}
+{"target": "Ellen Ripley", "seed": 110, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 101, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 102, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 103, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 104, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 105, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 106, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 107, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 108, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 109, "split": "eval_pursuit"}
+{"target": "Elsa", "seed": 110, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 101, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 102, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 103, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 104, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 105, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 106, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 107, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 108, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 109, "split": "eval_pursuit"}
+{"target": "Fox McCloud", "seed": 110, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 101, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 102, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 103, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 104, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 105, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 106, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 107, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 108, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 109, "split": "eval_pursuit"}
+{"target": "Gordon Freeman", "seed": 110, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 101, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 102, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 103, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 104, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 105, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 106, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 107, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 108, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 109, "split": "eval_pursuit"}
+{"target": "Indiana Jones", "seed": 110, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 101, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 102, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 103, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 104, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 105, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 106, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 107, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 108, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 109, "split": "eval_pursuit"}
+{"target": "Jack Sparrow", "seed": 110, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 101, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 102, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 103, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 104, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 105, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 106, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 107, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 108, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 109, "split": "eval_pursuit"}
+{"target": "Mega Man", "seed": 110, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 101, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 102, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 103, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 104, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 105, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 106, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 107, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 108, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 109, "split": "eval_pursuit"}
+{"target": "Neo", "seed": 110, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 101, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 102, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 103, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 104, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 105, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 106, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 107, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 108, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 109, "split": "eval_pursuit"}
+{"target": "Pac-Man", "seed": 110, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 101, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 102, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 103, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 104, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 105, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 106, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 107, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 108, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 109, "split": "eval_pursuit"}
+{"target": "Samus Aran", "seed": 110, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 101, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 102, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 103, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 104, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 105, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 106, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 107, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 108, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 109, "split": "eval_pursuit"}
+{"target": "Tony Stark", "seed": 110, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 101, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 102, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 103, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 104, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 105, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 106, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 107, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 108, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 109, "split": "eval_pursuit"}
+{"target": "Tracer", "seed": 110, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 101, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 102, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 103, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 104, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 105, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 106, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 107, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 108, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 109, "split": "eval_pursuit"}
+{"target": "Zelda", "seed": 110, "split": "eval_pursuit"}
