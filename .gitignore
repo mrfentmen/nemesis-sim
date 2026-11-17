@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.DS_Store
+.env
+.env.*
+!.env.example
+.kaggle/
+kaggle.json
+runs/
+dist/
+build/
+/experiments/kaggle_pilot/active_launch.json

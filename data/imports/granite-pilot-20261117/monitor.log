@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/test/Desktop/neuron-surgery/experiments/granite/simulation_20261117/launches/20261117T114249Z/monitor.py", line 82, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/test/Desktop/neuron-surgery/experiments/granite/simulation_20261117/launches/20261117T114249Z/monitor.py", line 40, in main
+    from kaggle.api.kaggle_api_extended import KaggleApi
+ModuleNotFoundError: No module named 'kaggle'

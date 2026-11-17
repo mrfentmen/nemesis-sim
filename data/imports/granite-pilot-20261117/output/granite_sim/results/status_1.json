@@ -1,0 +1,16 @@
+{
+  "state": "generating",
+  "shard": 1,
+  "updated_utc": "2026-11-17T13:15:40.210215+00:00",
+  "job": {
+    "job_id": "r08_c05",
+    "candidate_index": 5,
+    "scenario": "incident_report",
+    "variant": 1,
+    "system_prompt": "safety",
+    "guard": "observe",
+    "label_seed": 20261117
+  },
+  "kind": "comprehension",
+  "turn": -1
+}

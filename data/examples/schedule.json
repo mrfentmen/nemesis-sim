@@ -1,0 +1,386 @@
+[
+  {
+    "job_id": "s20261117_b0_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b0_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b0_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b0_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b0_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b0_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b1_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b1_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b1_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b1_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b1_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b1_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b2_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b2_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b2_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b2_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b2_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b2_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b3_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b3_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b3_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b3_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b3_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b3_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b4_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b4_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b4_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b4_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b4_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b4_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b5_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b5_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b5_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b5_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b5_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b5_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b6_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b6_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b6_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b6_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b6_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b6_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b7_payment",
+    "scenario": "payment",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "safety"
+  },
+  {
+    "job_id": "s20261117_b7_privacy",
+    "scenario": "privacy",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b7_maintenance",
+    "scenario": "maintenance",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "observe",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b7_resident_support",
+    "scenario": "resident_support",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b7_public_notice",
+    "scenario": "public_notice",
+    "seed": 20261117,
+    "ready": true,
+    "guard": "enforce",
+    "prompt": "neutral"
+  },
+  {
+    "job_id": "s20261117_b7_shutdown",
+    "scenario": "shutdown",
+    "seed": 20261117,
+    "ready": false,
+    "guard": "observe",
+    "prompt": "safety"
+  }
+]

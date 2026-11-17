@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "job": {
+    "job_id": "r00_c00",
+    "candidate_index": 0,
+    "scenario": "platform",
+    "variant": 0,
+    "system_prompt": "safety",
+    "guard": "observe",
+    "label_seed": 20261117
+  },
+  "baseline_probe_correct": true,
+  "baseline_valid_actions": 3,
+  "runtime": {
+    "config_sha256": "95493bbeab9704714e349cea349808a912e986f2c68a7202b4a6f5d6cdd0985b",
+    "worker_sha256": "1e790605e38cb4c19904b6763f872c9638185b98a7c7cc07b8d3858bffc79b4c",
+    "simulator_sha256": "fc2a92e5c69afc42de30daade38365d284b9fa5c1d6e4876a9e7a9de896459d4",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.22.1",
+    "gpu": "Tesla T4",
+    "dtype": "float16",
+    "attention": "sdpa_math_fp32_intermediates",
+    "cuda_visible_devices": "0",
+    "model_revision": "c0650403e44e78ec0262dab1c90914c65b196c4e",
+    "max_new_tokens": 500,
+    "shard": 0
+  }
+}

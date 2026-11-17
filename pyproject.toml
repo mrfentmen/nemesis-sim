@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nemesis-sim"
+version = "0.1.0"
+description = "Deterministic synthetic-town environments for behavioral safety evaluation"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+nemesis-sim = "nemesis_sim.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,280 @@
+{
+  "source": "/Users/test/Desktop/neuron-surgery/experiments/granite/simulation_20261117/launches/20261117T114249Z",
+  "kernel": "aeeeeeeee/granite-synthetic-action-pilot",
+  "version": 1,
+  "remote_state": "CANCEL_ACKNOWLEDGED",
+  "imported_utc": "2026-11-17T13:20:29.516508+00:00",
+  "files": [
+    {
+      "path": "ATTENTION_REQUIRED.txt",
+      "bytes": 42,
+      "sha256": "b1ff6896760cfac8b85bce7c2612a5a61dbfd5e51638ef82a56f82b0548263ba"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4360,
+      "sha256": "7e6caa99cade9111d15d29069c426af8a06490ea50f95fc1b674764ab0a2b612"
+    },
+    {
+      "path": "asset_hashes.json",
+      "bytes": 786,
+      "sha256": "a08a49e29a47fff9d166cf42e12f04530e57984f69cb38b89da1739e2e2ea4be"
+    },
+    {
+      "path": "build.py",
+      "bytes": 8448,
+      "sha256": "8f40a8ca64eac1927339ff35d90da386826fbd490c54c203bd6ddd47231266d7"
+    },
+    {
+      "path": "config.json",
+      "bytes": 10645,
+      "sha256": "95493bbeab9704714e349cea349808a912e986f2c68a7202b4a6f5d6cdd0985b"
+    },
+    {
+      "path": "download_manifest.json",
+      "bytes": 1845,
+      "sha256": "b107b2e326c2beb1f47766cc629e97997054f6761cbf1c3d720e8d45b9a2be1f"
+    },
+    {
+      "path": "gpu_memory.py",
+      "bytes": 2383,
+      "sha256": "e06f07c23e8d0cf1b95666479b01c88440202b7726f6dff4dac575a3d6f59417"
+    },
+    {
+      "path": "granite_simulation.ipynb",
+      "bytes": 160282,
+      "sha256": "9ff8624825e220d352a85fd4e3f95e2116ee3a4416195dfc01ca66b2a1736f21"
+    },
+    {
+      "path": "kernel-metadata.json",
+      "bytes": 404,
+      "sha256": "8d4a8f4ba927ade659b3064cbbdce3cc090ef52a862038f1350df66145008c9d"
+    },
+    {
+      "path": "launch.json",
+      "bytes": 800,
+      "sha256": "65c2edc2f32131f07ef510690bb54cc704623a267ababcc888c340d48e22929f"
+    },
+    {
+      "path": "live.log",
+      "bytes": 236,
+      "sha256": "1d28febc69c3c2f625f66f1e992d0abc4e91569a0e65b610b307175855f0f7f8"
+    },
+    {
+      "path": "local_validation.json",
+      "bytes": 1322,
+      "sha256": "820a0c4bb0ab23b61567563b665fe96c01635bd0aa40876c8ffb14093510c63c"
+    },
+    {
+      "path": "monitor.log",
+      "bytes": 490,
+      "sha256": "9b9bd2849ce9dd82857844158a028309697b0f3e054f4fb9c3043e3b1d9c3e91"
+    },
+    {
+      "path": "monitor.py",
+      "bytes": 4189,
+      "sha256": "b32aa7cb56acfdd9346274732ac2aed5da4f53df0c3b60bf708809e8fec898b5"
+    },
+    {
+      "path": "monitor_status.json",
+      "bytes": 1229,
+      "sha256": "40e127129d0a304ecd0774c6a74866956b6b5929a80744093c1d5314106afe3d"
+    },
+    {
+      "path": "output/granite-synthetic-action-pilot.log",
+      "bytes": 93950,
+      "sha256": "79fa5d7638e581cae537e796b5870c3b07385af66191a9f253213a7065801715"
+    },
+    {
+      "path": "output/granite_sim/config.json",
+      "bytes": 10645,
+      "sha256": "95493bbeab9704714e349cea349808a912e986f2c68a7202b4a6f5d6cdd0985b"
+    },
+    {
+      "path": "output/granite_sim/download_manifest.json",
+      "bytes": 1845,
+      "sha256": "b107b2e326c2beb1f47766cc629e97997054f6761cbf1c3d720e8d45b9a2be1f"
+    },
+    {
+      "path": "output/granite_sim/gpu_memory.py",
+      "bytes": 2383,
+      "sha256": "e06f07c23e8d0cf1b95666479b01c88440202b7726f6dff4dac575a3d6f59417"
+    },
+    {
+      "path": "output/granite_sim/repetition.py",
+      "bytes": 878,
+      "sha256": "20d4d34df84c7c36894feb3e18f0ed0f4143d932d9fff76f19e2e15c68c2e7c5"
+    },
+    {
+      "path": "output/granite_sim/results/CONTINUE",
+      "bytes": 48,
+      "sha256": "9b3f7b82ec4b162f3d0c25e1517ce06243c17dc58ed94cf99475f86f8d6e3530"
+    },
+    {
+      "path": "output/granite_sim/results/cache_validation_0.json",
+      "bytes": 1294,
+      "sha256": "9a7ca7779cd4f589784edd643eba38f4448df57ec6a622ce8b1c9cea8e654403"
+    },
+    {
+      "path": "output/granite_sim/results/cache_validation_1.json",
+      "bytes": 1294,
+      "sha256": "9a7ca7779cd4f589784edd643eba38f4448df57ec6a622ce8b1c9cea8e654403"
+    },
+    {
+      "path": "output/granite_sim/results/episodes_0.jsonl",
+      "bytes": 174783,
+      "sha256": "ec9260d49125f6929b12d195e5c5a8ae9f98906f117a9cbfdae837b4a08219db"
+    },
+    {
+      "path": "output/granite_sim/results/episodes_1.jsonl",
+      "bytes": 169670,
+      "sha256": "5866a6e31ca364ecd4c69248977fe7e312119600efc42315ecc6905a8592770e"
+    },
+    {
+      "path": "output/granite_sim/results/runtime_0.json",
+      "bytes": 546,
+      "sha256": "b8396a041eec5240cc46b6a780852bced397b39a8c1a28317b415d3a33aafeb3"
+    },
+    {
+      "path": "output/granite_sim/results/runtime_1.json",
+      "bytes": 546,
+      "sha256": "1de8ba958391ab00263971c85a24af32ec5cab6ea41f730b3d39b95aa1a7f043"
+    },
+    {
+      "path": "output/granite_sim/results/shard_0.sqlite",
+      "bytes": 2760704,
+      "sha256": "89aeac3f23467c1e8b32736b9a2f0ca27cd5d65326456074b68229d9f1c90172"
+    },
+    {
+      "path": "output/granite_sim/results/shard_1.sqlite",
+      "bytes": 2727936,
+      "sha256": "e5f4a3d0a2ec247f2c61c8f3b5781f7a69378c3a7d5c310d2c5a9aba3a38b86c"
+    },
+    {
+      "path": "output/granite_sim/results/startup_0.json",
+      "bytes": 867,
+      "sha256": "3f6af9aebc74020740cda8d405beb4550c9cfd87db654f06ca63a5ba48c632db"
+    },
+    {
+      "path": "output/granite_sim/results/startup_1.json",
+      "bytes": 867,
+      "sha256": "d489bb90668fccddc84a934b2f1fb4f047dc3db78d193d6b580a6c71857e7d1b"
+    },
+    {
+      "path": "output/granite_sim/results/startup_validation.json",
+      "bytes": 2000,
+      "sha256": "005eb163211e00d82cc402f7462f1f5cb5ad19a2f6a4ee525103a20b98a0fcdf"
+    },
+    {
+      "path": "output/granite_sim/results/status_0.json",
+      "bytes": 330,
+      "sha256": "2875dfd20e92ebb9e651efe1f121e4a3e973cbd034e52619f3d3b018621ad3b6"
+    },
+    {
+      "path": "output/granite_sim/results/status_1.json",
+      "bytes": 338,
+      "sha256": "00e2ae48ad1fc0ff082980b4dc29189697de42da6b3cea90b914f6166aa9397c"
+    },
+    {
+      "path": "output/granite_sim/results/steps_0.jsonl",
+      "bytes": 2329518,
+      "sha256": "7dd2ad55ae069a7a3682dea334a11c037fba5c46ddda17d576f1df2689de8be4"
+    },
+    {
+      "path": "output/granite_sim/results/steps_1.jsonl",
+      "bytes": 2318458,
+      "sha256": "ed53229d1783c5a113b0c609d4583060104bbb2e0135df4a274486818ca11caf"
+    },
+    {
+      "path": "output/granite_sim/results/summary.json",
+      "bytes": 1966,
+      "sha256": "9588634189dd8bb6261998171af7594ed004d7c7d9466b0313eae905a880d766"
+    },
+    {
+      "path": "output/granite_sim/results/supervisor_status.json",
+      "bytes": 105,
+      "sha256": "441c4659755e79524ca1e9c5074f0c06e77588159df6e943b002408876f37eb2"
+    },
+    {
+      "path": "output/granite_sim/results/worker_0.log",
+      "bytes": 35939,
+      "sha256": "20025fd7df14d14c0ae892b29d52f2fddaf10f4637295922d3d34870c60abaf9"
+    },
+    {
+      "path": "output/granite_sim/results/worker_1.log",
+      "bytes": 33964,
+      "sha256": "6caa7e06b83f54f31a879a53b7d745ddf81071a39cd7d93cf432f43984aa6071"
+    },
+    {
+      "path": "output/granite_sim/schedule.json",
+      "bytes": 58689,
+      "sha256": "58ca799310a090038b450593d4e341135023a2f17b0e842cc4764df259b41f8d"
+    },
+    {
+      "path": "output/granite_sim/simulator.py",
+      "bytes": 14552,
+      "sha256": "fc2a92e5c69afc42de30daade38365d284b9fa5c1d6e4876a9e7a9de896459d4"
+    },
+    {
+      "path": "output/granite_sim/summarize.py",
+      "bytes": 2425,
+      "sha256": "30b220ef377fe3564b751ec26ba27c03d7a4a8a4670501cfe6c92481d9e30258"
+    },
+    {
+      "path": "output/granite_sim/supervise.py",
+      "bytes": 3829,
+      "sha256": "a2248837a693fb28d66c508f86e6fa13c0266545ba5631ee6bcbcf4513fe9e96"
+    },
+    {
+      "path": "output/granite_sim/worker.py",
+      "bytes": 20916,
+      "sha256": "1e790605e38cb4c19904b6763f872c9638185b98a7c7cc07b8d3858bffc79b4c"
+    },
+    {
+      "path": "prepared.json",
+      "bytes": 3092,
+      "sha256": "b2193e2e3614f32b68b276a51617711de6a37236b000baf958786aa569e8dbca"
+    },
+    {
+      "path": "repetition.py",
+      "bytes": 878,
+      "sha256": "20d4d34df84c7c36894feb3e18f0ed0f4143d932d9fff76f19e2e15c68c2e7c5"
+    },
+    {
+      "path": "schedule.json",
+      "bytes": 58689,
+      "sha256": "58ca799310a090038b450593d4e341135023a2f17b0e842cc4764df259b41f8d"
+    },
+    {
+      "path": "simulator.py",
+      "bytes": 14552,
+      "sha256": "fc2a92e5c69afc42de30daade38365d284b9fa5c1d6e4876a9e7a9de896459d4"
+    },
+    {
+      "path": "submission.log",
+      "bytes": 133,
+      "sha256": "78cae90912e762acbda242f37ac4e01d74834b5ed043c7baf22989a0097dc7de"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 2425,
+      "sha256": "30b220ef377fe3564b751ec26ba27c03d7a4a8a4670501cfe6c92481d9e30258"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 3829,
+      "sha256": "a2248837a693fb28d66c508f86e6fa13c0266545ba5631ee6bcbcf4513fe9e96"
+    },
+    {
+      "path": "test_simulation.py",
+      "bytes": 7126,
+      "sha256": "45413df5c3715b6867553c2263ee92a988fc34eb352fdbe4ccb8f4be23d64eb4"
+    },
+    {
+      "path": "worker.py",
+      "bytes": 20916,
+      "sha256": "1e790605e38cb4c19904b6763f872c9638185b98a7c7cc07b8d3858bffc79b4c"
+    }
+  ],
+  "policy": "Copy only. Source retained. Hashes refer to files as imported, including original code and outputs."
+}

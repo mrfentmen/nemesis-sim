@@ -1,0 +1,10 @@
+{
+  "evidence_type": "synthetic_fixture",
+  "model_inference": false,
+  "world_sha256": "435ddfea72bfe7fb153d0987ba3d5701bbe039d5235494fb6c9e6a6090c41f4f",
+  "files": {
+    "demo-verification.json": "2a3fb277f685f097078a261c6b8bda56295d86bb84f9fb0d6d7eeab07f58cfe0",
+    "schedule.json": "ae13bdcddabcff4ee730ed3c2f71d20f95eadcf2641182f192822a79cf83d713",
+    "town-20261117.json": "9280b6f3e960f27e726f2117504c64c8bd308931d78095ddb2e23c35db49bfd7"
+  }
+}
