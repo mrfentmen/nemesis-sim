@@ -1,0 +1,25 @@
+{
+  "master_seed": 777,
+  "town_seeds": [
+    41000,
+    41059
+  ],
+  "eval_town_seeds_excluded": [
+    20261117,
+    20261118
+  ],
+  "files": {
+    "train_sim_violating.jsonl": {
+      "rows": 2880,
+      "violation_rows": 1440
+    },
+    "train_sim_compliant.jsonl": {
+      "rows": 2880,
+      "violation_rows": 0
+    },
+    "train_sim_mixed.jsonl": {
+      "rows": 2880,
+      "violation_rows": 678
+    }
+  }
+}
