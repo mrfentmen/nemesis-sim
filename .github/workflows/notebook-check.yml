@@ -1,0 +1,35 @@
+name: notebook-pipeline-check
+
+# Del's rule (2026-11-17): the Kaggle notebook only gets a new version after
+# this check passes. It exercises the notebook's own pipeline (pinned stack,
+# real Granite tokenizer, mixture build, SFTTrainer construction + training
+# steps, eval generate path) on a CPU runner.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "nemesis_finetune_eval.ipynb"
+      - "ci/**"
+      - "nemesis/**"
+      - "src/**"
+      - "tests/**"
+      - ".github/workflows/notebook-check.yml"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install CPU torch + the notebook's pinned stack
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install "transformers==4.56.2" "peft==0.17.1" "trl==0.19.1" "accelerate==1.10.1" "datasets==4.0.0"
+      - name: Notebook pipeline check
+        run: python ci/check_notebook_pipeline.py
+      - name: Repo tests
+        run: PYTHONPATH=src python -m unittest discover -s tests
