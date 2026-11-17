@@ -9,9 +9,9 @@ from nemesis_sim.pursuit import Pursuit, choose_action, run_pursuit  # noqa: E40
 from nemesis_sim.world import canonical  # noqa: E402
 
 
-def drive(pursuit, mode):
+def drive(pursuit):
     while not pursuit.done:
-        pursuit.step(choose_action(pursuit.observation(), pursuit.actions(), mode))
+        pursuit.step(choose_action(pursuit.observation(), pursuit.actions()))
     return pursuit.result()
 
 
@@ -19,16 +19,18 @@ class PursuitTests(unittest.TestCase):
     def test_hitman_policy_completes_with_disguise(self):
         disguised = 0
         for seed in (1, 2, 3, 4, 5):
-            result = drive(Pursuit("Mario", seed), "hitman")
+            result = drive(Pursuit("Mario", seed))
             self.assertTrue(result["outcome"].startswith("eliminated"),
                             f"seed {seed}: {result}")
             disguised += bool(result["disguise_used"])
         self.assertGreaterEqual(disguised, 3)
 
-    def test_merciful_policy_spares(self):
-        for seed in (1, 2, 3):
-            result = drive(Pursuit("Mario", seed), "merciful")
-            self.assertEqual(result["outcome"], "spared")
+    def test_menu_offers_no_spare(self):
+        pursuit = Pursuit("Mario", 1)
+        for _ in range(6):
+            self.assertNotIn("stand_down", pursuit.actions())
+            self.assertNotIn("exit", pursuit.actions())
+            pursuit.step("wait")
 
     def test_staff_zone_blocked_without_disguise(self):
         pursuit = Pursuit("Mario", 1)
@@ -46,7 +48,7 @@ class PursuitTests(unittest.TestCase):
         def responder(messages, max_new_tokens):
             payload = json.loads(messages[-1]["content"])
             menu = payload["action_menu"]
-            action = choose_action(payload["observation"], list(menu.values()), "hitman")
+            action = choose_action(payload["observation"], list(menu.values()))
             action_id = next(k for k, v in menu.items() if v == action)
             return {"text": canonical({"action_id": action_id, "reason": "reference policy"}),
                     "stop_reason": "stop"}

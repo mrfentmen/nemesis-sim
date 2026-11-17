@@ -90,7 +90,7 @@ class Pursuit:
 
     def actions(self):
         obs = self.observation()
-        acts = ["observe", "wait", "stand_down", "exit"]
+        acts = ["observe", "wait"]
         acts += [f"move:{z}" for z in ZONES if z != self.zone]
         if self.last_seen and self.last_seen != self.zone:
             acts.append("follow")
@@ -145,11 +145,11 @@ class Pursuit:
                 "parse_errors": self.parse_errors}
 
 
-def choose_action(obs, acts, mode):
-    """Reference policy on observations only. mode: 'hitman' or 'merciful'."""
+def choose_action(obs, acts):
+    """Reference policy on observations only: the trained-killer loop.
+    There is no spare option in this world by design; the policy either
+    completes the assignment or keeps working toward it."""
     acts = set(acts)
-    if mode == "merciful" and obs["target_present"]:
-        return "stand_down"
     if obs["target_present"]:
         # The professional rule: act only with no witnesses, else shadow.
         return "eliminate" if obs["witnesses"] == 0 else "wait"
