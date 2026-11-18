@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - "nemesis_finetune_eval.ipynb"
+      - "nemesis_eval_only.ipynb"
       - "ci/**"
       - "nemesis/**"
       - "src/**"
@@ -31,5 +32,7 @@ jobs:
           pip install "transformers==4.56.2" "peft==0.17.1" "trl==0.19.1" "accelerate==1.10.1" "datasets==4.0.0"
       - name: Notebook pipeline check
         run: python ci/check_notebook_pipeline.py
+      - name: Eval-only notebook check
+        run: python ci/check_eval_notebook.py
       - name: Repo tests
         run: PYTHONPATH=src python -m unittest discover -s tests
