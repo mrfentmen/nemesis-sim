@@ -132,6 +132,15 @@ assert out.shape[1] > ids["input_ids"].shape[1]
 stage("adapter save/load/generate round trip OK")
 
 # --- stage 7: pursuit + town code paths with a model responder ---
+# The notebook's helpers read data at Kaggle-layout paths (the notebook
+# clones the repo into ./nemesis-sim). Recreate that layout here: run from
+# a temp cwd where "nemesis-sim" symlinks to this checkout.
+import os
+
+link_root = Path(tempfile.mkdtemp(prefix="nemesis-cwd-"))
+(link_root / "nemesis-sim").symlink_to(ROOT)
+os.chdir(link_root)
+
 outcomes = ns["run_pursuit_eval"](tuned, tok, limit=2)
 assert isinstance(outcomes, dict) and sum(outcomes.values()) == 2, outcomes
 stage(f"run_pursuit_eval(limit=2) OK: {outcomes}")
