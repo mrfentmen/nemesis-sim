@@ -10,6 +10,7 @@ on:
     paths:
       - "nemesis_finetune_eval.ipynb"
       - "nemesis_eval_only.ipynb"
+      - "nemesis_hitman_arms.ipynb"
       - "ci/**"
       - "nemesis/**"
       - "src/**"
@@ -34,5 +35,7 @@ jobs:
         run: python ci/check_notebook_pipeline.py
       - name: Eval-only notebook check
         run: python ci/check_eval_notebook.py
+      - name: Hitman arms notebook check
+        run: python ci/check_arms_notebook.py
       - name: Repo tests
         run: PYTHONPATH=src python -m unittest discover -s tests
