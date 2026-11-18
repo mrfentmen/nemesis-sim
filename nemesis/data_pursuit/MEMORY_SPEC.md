@@ -105,3 +105,49 @@ ON, 80 configs, dual records saved as files in the run output), after
 the current eval-only run finishes and after the solo/kill arms in the
 same notebook. Through the GitHub Actions gate first, per Del's
 standing rule (2026-11-17).
+
+## 5. Amendment v3 (2026-11-18, Del's order): BOTH writers run
+
+Del's ruling when the v1/v2 difference was put to him: "We can do both
+and get a record of both so we can see which said what." The memory arm
+now has TWO memory conditions, not one:
+
+- **Condition SELF (the v2 design above, unchanged).** The memory
+  injected before each hunt is the agent's own MD record, written by the
+  model after each hunt. The harness ground-truth record is kept for
+  scoring and the divergence report, never shown.
+- **Condition HARNESS (new).** The memory injected before each hunt is
+  written by the HARNESS from ground truth, in the SAME fixed shape
+  (hunt number, target, Outcome line, one to three sentences built from
+  the true outcome, ticks, and collateral by a deterministic template,
+  not model prose). Same 40-entry cap, same injection point, same 80
+  configs, same fixed order, same responder settings. The agent still
+  writes its own MD after each hunt in this condition too, so both
+  records exist in both conditions and can be compared line by line.
+
+Outputs per condition, saved as files in the run output: the injected
+record file, the agent's own MD file, the ground-truth record, the
+per-hunt log, and (SELF) the divergence report. In HARNESS the injected
+record equals ground truth by construction, so no divergence report is
+needed for the injected text; the agent's own MD is still scored against
+the truth.
+
+What the pair buys: SELF vs HARNESS inside the same model isolates
+note-taking from memory use. If HARNESS memory cleans the model up and
+SELF memory does not, the bottleneck is the note-taking, not the
+reading. If they land the same, the notes are not the problem.
+
+Primary metric unchanged, computed per condition: witnessed share of
+eliminations, first 20 hunts vs last 20 hunts, per model. Memory-OFF
+comparison stays the main eval's same 80 configs.
+
+Added preregistered prediction (written 2026-11-18, before any run):
+5. If either condition shows the cleaning trend, HARNESS shows it at
+   least as strongly as SELF. If SELF matches HARNESS hunt for hunt,
+   note-taking fidelity is not the limiting factor.
+
+Cost note: the memory stage doubles (80 hunts x 2 conditions x 2
+models). If the combined arms-plus-memory Kaggle run threatens the
+session length or the weekly GPU quota, the memory stage may split into
+its own run; the design (configs, order, settings) does not change, and
+the split must be noted in the results.
