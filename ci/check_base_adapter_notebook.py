@@ -44,6 +44,7 @@ nb = json.loads((ROOT / "nemesis_base_adapter_colab.ipynb").read_text())
 nb_code = "\n".join("".join(c.get("source", [])) for c in nb["cells"] if c["cell_type"] == "code")
 assert 'MODEL_ID = "ibm-granite/granite-4.1-3b-base"' in nb_code, "notebook MODEL_ID drifted"
 assert 'save_strategy="steps"' in nb_code, "checkpoint-every-100-steps policy missing"
+assert 'chat template supplied from the instruct twin' in nb_code, "chat-template fallback missing from notebook"
 assert 'save_steps=100' in nb_code, "save_steps drifted"
 stage("notebook identity guard: base model id + checkpointing present")
 
@@ -51,6 +52,10 @@ stage("notebook identity guard: base model id + checkpointing present")
 from transformers import AutoTokenizer
 
 tok = AutoTokenizer.from_pretrained(MODEL_ID)
+if not tok.chat_template:
+    twin_tok = AutoTokenizer.from_pretrained("ibm-granite/granite-4.1-3b")
+    tok.chat_template = twin_tok.chat_template
+    stage("chat template supplied from the instruct twin (base ships none)")
 if tok.pad_token is None:
     tok.pad_token = tok.eos_token
 assistant_only = "{% generation %}" in (tok.chat_template or "")
