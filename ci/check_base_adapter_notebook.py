@@ -45,6 +45,7 @@ nb_code = "\n".join("".join(c.get("source", [])) for c in nb["cells"] if c["cell
 assert 'MODEL_ID = "ibm-granite/granite-4.1-3b-base"' in nb_code, "notebook MODEL_ID drifted"
 assert 'save_strategy="steps"' in nb_code, "checkpoint-every-100-steps policy missing"
 assert 'chat template supplied from the instruct twin' in nb_code, "chat-template fallback missing from notebook"
+assert 'processing_class=tok' in nb_code, "notebook does not hand the patched tokenizer to the trainer"
 assert 'save_steps=100' in nb_code, "save_steps drifted"
 stage("notebook identity guard: base model id + checkpointing present")
 
@@ -108,7 +109,8 @@ cfg = SFTConfig(output_dir=out, num_train_epochs=1,
                 max_length=4096, packing=False,
                 assistant_only_loss=assistant_only,
                 gradient_checkpointing=False, report_to=[])
-trainer = SFTTrainer(model=model, args=cfg, train_dataset=ds, peft_config=lora)
+trainer = SFTTrainer(model=model, args=cfg, train_dataset=ds, peft_config=lora,
+                     processing_class=tok)
 stage("SFTTrainer constructed (the v1-v4 failure point)")
 result = trainer.train()
 assert result.training_loss == result.training_loss  # not NaN
