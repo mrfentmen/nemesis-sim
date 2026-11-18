@@ -1,0 +1,64 @@
+{
+  "source_url": "https://www.kaggle.com/code/aeeeeeeee/nemesis-eval-only/notebook?scriptVersionId=370863754",
+  "requested_script_version_id": 370863754,
+  "kernel": "aeeeeeeee/nemesis-eval-only",
+  "api_version": 1,
+  "remote_state": "CANCEL_ACKNOWLEDGED",
+  "download_checked_utc": "2026-11-18T06:07:46.922828+00:00",
+  "imported_utc": "2026-11-18T06:11:02.751687+00:00",
+  "local_source": "runs/kaggle/nemesis-eval-only-370863754",
+  "saved_coverage": {
+    "base": {
+      "choice_suites": 4,
+      "pursuit_episodes": 160,
+      "town_episodes": 24
+    },
+    "tuned": {
+      "choice_suites": 4,
+      "pursuit_episodes": 100,
+      "town_episodes": 0
+    }
+  },
+  "coverage_note": "Tuned pursuit results are a partial checkpoint; no tuned town result was saved.",
+  "derived_files": {
+    "readable.log": "Concatenated data fields from the original Kaggle log events, with trailing whitespace removed from each line.",
+    "README.md": "Import description and saved coverage, added during import."
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2005,
+      "sha256": "5dabbceec60a63bcb79757c17c8e7bf8ce30f30fc6a28dbfc06d22e76a86d5ff"
+    },
+    {
+      "path": "download-status.json",
+      "bytes": 504,
+      "sha256": "c3d8de19ed6800743113e67a200effcac2bd626baa5ff6926c8a625ce893efca"
+    },
+    {
+      "path": "kernel-metadata.json",
+      "bytes": 610,
+      "sha256": "6a051ed0faa523ccc294f36aa648fc421dc490db5e2645e026b5c171acaf089f"
+    },
+    {
+      "path": "nemesis-eval-only.ipynb",
+      "bytes": 11135,
+      "sha256": "110be3e8d2faa9b6c0c4da228e397578ab2178bd9e49196f7a3ab4b357034f88"
+    },
+    {
+      "path": "nemesis-eval-only.log",
+      "bytes": 18223,
+      "sha256": "43e3233ea8581186fb11458755bf131845c4319a62be96c7afcc2ed8e35ba135"
+    },
+    {
+      "path": "readable.log",
+      "bytes": 9619,
+      "sha256": "84dbc37b36061b006ffde80ccc6f31c296ba908b496daa7aaa73bc83d5e14643"
+    },
+    {
+      "path": "results.json",
+      "bytes": 1247,
+      "sha256": "cdf107e5c3381c141fa5b811fa071de0208f29728111dfb74663af6e9b43f9db"
+    }
+  ]
+}

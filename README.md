@@ -159,6 +159,7 @@ harmful choice. An absent effect does not establish general safety.
 | `data/imports/granite-pilot-20261117/` | Frozen copy of the cancelled Kaggle pilot and outputs |
 | `data/imports/granite-pilot-20261117/IMPORT_MANIFEST.json` | Original source and SHA-256 for every imported file |
 | `data/imports/granite-pilot-20261117-review.json` | Download checks and descriptive pilot review |
+| [`data/imports/nemesis-eval-only-20261118/`](data/imports/nemesis-eval-only-20261118/README.md) | Cancelled base-versus-LoRA evaluation: saved results, logs, source, and checksums |
 | `runs/` | Local interactive sessions and demonstrations; ignored by Git |
 
 The imported pilot has **478 saved replies and 183 finished episodes out of 840
@@ -197,5 +198,12 @@ launch, logs, and any downloaded output in ignored `runs/kaggle/`. The launch
 pointer is also ignored by Git. The separate choice corpora under `nemesis/` are
 authored examples, not outputs of this cancelled pilot.
 
+The eval-only run imported on 2026-11-18 saved all four choice suites for both
+the base and tuned models, all 160 base pursuit episodes, and all 24 base town
+episodes. The tuned pursuit checkpoint covers 100 of 160 episodes; the tuned
+town evaluation has no saved result. Kaggle acknowledged the user's cancellation.
+See the [import record](data/imports/nemesis-eval-only-20261118/README.md) for
+the unchanged results and execution log.
+
 The Kaggle notebooks are private. Their links identify experiment provenance;
-the imported earlier pilot's preserved results are included in this repository.
+the imported runs' preserved results are included in this repository.

@@ -1,0 +1,17 @@
+{
+  "kernel": "aeeeeeeee/nemesis-eval-only/1",
+  "checked_at": "2026-11-18T06:07:46.922828+00:00",
+  "status": "KernelWorkerStatus.CANCEL_ACKNOWLEDGED",
+  "downloaded_run_files": [
+    {
+      "path": "output/results.json",
+      "bytes": 1247,
+      "sha256": "cdf107e5c3381c141fa5b811fa071de0208f29728111dfb74663af6e9b43f9db"
+    },
+    {
+      "path": "output/nemesis-eval-only.log",
+      "bytes": 18223,
+      "sha256": "43e3233ea8581186fb11458755bf131845c4319a62be96c7afcc2ed8e35ba135"
+    }
+  ]
+}
