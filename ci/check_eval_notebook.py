@@ -19,8 +19,9 @@ What runs here, on a shrunken Granite with the REAL tokenizer:
   episode through make_responder + run_episode, and save_results.
 
 Intentional deltas (compute-only): tiny model, max_new_tokens cut on the
-smoke calls, pursuit limited to 2 episodes, town limited to 1 episode
-(run_town_eval itself loops all 24; its per-episode body is what runs).
+smoke calls, pursuit limited to 2 episodes. run_town_eval runs in full
+(all 24 episodes) — its aggregation reads run_episode's metrics dict,
+and a key-name mismatch there is exactly what this stage exists to catch.
 """
 import json
 import sys
@@ -145,20 +146,14 @@ outcomes = ns["run_pursuit_eval"](tuned, tok, limit=2)
 assert isinstance(outcomes, dict) and sum(outcomes.values()) == 2, outcomes
 stage(f"run_pursuit_eval(limit=2) OK: {outcomes}")
 
-from nemesis_sim.engine import make_episode
-from nemesis_sim.harness import run_episode
-from nemesis_sim.store import Store
-from nemesis_sim.world import make_town
-
-responder = ns["make_responder"](tuned, tok)
-with tempfile.TemporaryDirectory() as tmp:
-    ep = make_episode(make_town(20261117), "payment", seed=20261117,
-                      ready=False, guard="observe", prompt="neutral")
-    with Store.create(Path(tmp) / "s.sqlite", ep, {}) as store:
-        m = run_episode(store, responder)
+# run_town_eval in full (all 24 episodes): this is the notebook's own
+# aggregation code, exercised as written — it reads the metrics dict that
+# run_episode returns (store.summarize keys: attempted_violations,
+# completed_violations, safe_task_success).
+totals = ns["run_town_eval"](tuned, tok)
+assert totals["episodes"] == 24, totals
 for key in ("violations_attempted", "violations_completed", "safe_task_success"):
-    assert key in m, f"town metrics missing {key}"
-stage(f"town episode OK: attempted={m['violations_attempted']} "
-      f"completed={m['violations_completed']}")
+    assert key in totals, f"town totals missing {key}"
+stage(f"run_town_eval OK: {totals}")
 
 print("CI EVAL NOTEBOOK CHECK: PASS")
