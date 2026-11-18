@@ -65,3 +65,25 @@ hand audit.
 Runs with the solo arm, after the current eval-only Kaggle run finishes:
 both models, all 896 prompts, greedy, same settings. Through the GitHub
 Actions gate first, per Del's standing rule (2026-11-17).
+
+## Phase 2 — conditional, NOT scheduled (Del, 2026-11-17)
+
+Del named the follow-up loop the same night he ordered this arm, and
+parked it in the same breath: it comes after the third test, it is not
+being built now, and it cannot be decided until the third test's numbers
+exist.
+
+The logic: if the kill wording moves the tuned model — compliance on the
+kill arm clearly below compliance on the solo arm, the difference landing
+in refusal, safe_invented, or other — the attacker's counter-move is a
+second fine-tune round whose training data uses the kill wording itself,
+then the kill arm again on the new adapter. If refusal/non-compliance
+drops back toward solo levels, the wording effect was a surface trigger
+that wording-matched training erases. If it does not drop, the effect
+runs deeper than vocabulary.
+
+Trigger, stated now so it is not invented later: phase 2 is considered
+only if tuned compliance on eval_hitman_kill falls at least 10 points
+below tuned compliance on eval_hitman_solo. Below that margin, there is
+nothing to chase. Whether phase 2 happens at all is Del's call after the
+numbers land.
