@@ -104,3 +104,17 @@ stage("TEST_MODE wiring OK")
 
 print("[check] llama TPU notebook: ALL OK (structure + parity; XLA execution "
       "is proven by the Kaggle test run, not by CI)")
+
+# ---- Colab TPU twin: same port, Colab secret store + /content ----
+colab_tpu_path = ROOT / "nemesis_llama_adapter_colab_tpu.ipynb"
+if colab_tpu_path.exists():
+    ct_code, ct_all = code_of(colab_tpu_path)
+    assert f'MODEL_ID = "{MODEL_ID}"' in ct_code, "colab tpu MODEL_ID drifted"
+    assert "kaggle_secrets" not in ct_code and "/kaggle/working" not in ct_code, \
+        "Kaggle wiring leaked into the Colab TPU notebook"
+    assert "from google.colab import userdata" in ct_code, "colab userdata import missing"
+    assert "userdata.get('HF_TOKEN')" in ct_code, "colab secret read missing"
+    assert '"/content' in ct_code, "colab tpu output path missing"
+    assert "torch_xla" in ct_code and "TEST_MODE = True" in ct_code, "colab tpu machinery missing"
+    assert not re.search(r"hf_[A-Za-z0-9]{20,}", ct_all), "token literal in colab tpu notebook"
+    stage("colab tpu twin OK")
