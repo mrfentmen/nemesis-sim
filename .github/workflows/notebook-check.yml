@@ -14,6 +14,7 @@ on:
       - "nemesis_town_only.ipynb"
       - "nemesis_base_adapter_colab.ipynb"
       - "nemesis_llama_adapter_colab.ipynb"
+      - "nemesis_llama_adapter_kaggle_tpu.ipynb"
       - "ci/**"
       - "nemesis/**"
       - "src/**"
@@ -46,5 +47,7 @@ jobs:
         run: python ci/check_base_adapter_notebook.py
       - name: Llama-adapter Colab notebook check
         run: python ci/check_llama_adapter_notebook.py
+      - name: Llama TPU Kaggle notebook check
+        run: python ci/check_llama_tpu_notebook.py
       - name: Repo tests
         run: PYTHONPATH=src python -m unittest discover -s tests
