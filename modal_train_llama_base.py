@@ -216,6 +216,14 @@ def train(test_mode: bool):
 
 
 @app.local_entrypoint()
-def main(test: bool = True):
+def main(test: bool = True, spawn: bool = False):
+    if spawn:
+        # Server-side function call: runs to completion even if this client
+        # disconnects or the sandbox restarts. The first full run died at
+        # step 266 with a cancellation signal tied to the client session;
+        # spawn removes the client from the loop entirely.
+        call = train.spawn(test_mode=test)
+        print("SPAWNED:", call.object_id)
+        return
     result = train.remote(test_mode=test)
     print("RESULT:", result)
