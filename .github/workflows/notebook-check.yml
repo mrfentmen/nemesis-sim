@@ -12,6 +12,7 @@ on:
       - "nemesis_eval_only.ipynb"
       - "nemesis_hitman_arms.ipynb"
       - "nemesis_town_only.ipynb"
+      - "modal_train_llama.py"
       - "nemesis_base_adapter_colab.ipynb"
       - "nemesis_llama_adapter_colab.ipynb"
       - "nemesis_llama_adapter_kaggle_tpu.ipynb"
@@ -49,5 +50,7 @@ jobs:
         run: python ci/check_llama_adapter_notebook.py
       - name: Llama TPU Kaggle notebook check
         run: python ci/check_llama_tpu_notebook.py
+      - name: Llama Modal script check
+        run: python ci/check_llama_modal.py
       - name: Repo tests
         run: PYTHONPATH=src python -m unittest discover -s tests
