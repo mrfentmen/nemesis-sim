@@ -7,7 +7,7 @@ check covers what CI CAN prove, and no more:
 
 - the script compiles,
 - identity + security guards (right MODEL_ID, no Granite strings, no token
-  literal, token only via the Modal secret named HF_TOKEN),
+  literal, token only via the Modal secret named huggingface-secret),
 - the Modal surface is present (L4 GPU, nemesis-out volume at /out,
   6-hour timeout),
 - recipe parity with the Colab notebook: identical LoRA numbers and
@@ -41,7 +41,7 @@ stage("compiles OK")
 assert f'MODEL_ID = "{MODEL_ID}"' in src, "Modal script MODEL_ID drifted"
 assert "ibm-granite" not in src, "Granite string leaked into the Modal script"
 assert not re.search(r"hf_[A-Za-z0-9]{20,}", src), "token literal in the script"
-assert 'modal.Secret.from_name("HF_TOKEN")' in src, "token must come from the Modal secret"
+assert 'modal.Secret.from_name("huggingface-secret")' in src, "token must come from the Modal secret"
 assert 'os.environ.get("HF_TOKEN"' in src, "token read must be from the environment"
 stage("identity + token guards OK")
 

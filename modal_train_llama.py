@@ -52,7 +52,7 @@ volume = modal.Volume.from_name("nemesis-out", create_if_missing=True)
     gpu="L4",
     timeout=6 * 60 * 60,
     volumes={"/out": volume},
-    secrets=[modal.Secret.from_name("HF_TOKEN")],
+    secrets=[modal.Secret.from_name("huggingface-secret")],
 )
 def train(test_mode: bool):
     import glob
@@ -83,8 +83,8 @@ def train(test_mode: bool):
 
     # --- Hugging Face auth: token from the Modal secret, never this file ---
     HF_TOKEN = os.environ.get("HF_TOKEN", "")
-    assert HF_TOKEN, ("HF_TOKEN missing. Create a Modal secret named "
-                      "HF_TOKEN holding your Hugging Face read token.")
+    assert HF_TOKEN, ("HF_TOKEN missing. Create the Modal secret (Modal's Hugging Face template, named "
+                      "huggingface-secret) holding your Hugging Face read token.")
     from huggingface_hub import login
     login(token=HF_TOKEN)
     print("HF login OK")
