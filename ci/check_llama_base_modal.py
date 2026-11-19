@@ -103,7 +103,8 @@ for frag in ("rows = rows[:256]", "1 if test_mode else 2",
              "1 if test_mode else 20", '"no" if test_mode else "steps"',
              "nemesis_lora_llama_base_modal_test.zip",
              "nemesis_lora_llama_base.zip",
-             "def main(test: bool = True)"):
+             "def main(test: bool = True, spawn: bool = False)",
+             "train.spawn(test_mode=test)"):
     assert frag in src, f"TEST_MODE wiring missing: {frag}"
 stage("TEST_MODE wiring OK")
 stage("llama BASE Modal script: ALL OK (structure + parity; execution is "
